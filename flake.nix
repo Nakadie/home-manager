@@ -18,7 +18,7 @@
   in {
     formatter.${system} = pkgs.alejandra;
 
-    homeConfigurations.kam = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.christian.dietiker = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
 
       modules = [
