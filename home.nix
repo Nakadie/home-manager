@@ -12,7 +12,7 @@
     ];
 
     stateVersion = "24.05";
-    username = "kam";
+    username = "christian.dietiker";
   };
 
   nixpkgs.config = {
