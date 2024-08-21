@@ -11,7 +11,7 @@
       cowsay
     ];
 
-    stateVersion = "24.05";
+    stateVersion = "24.11";
     username = "christian.dietiker";
   };
 
