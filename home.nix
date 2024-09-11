@@ -9,6 +9,7 @@
     packages = with pkgs; [
       obsidian
       cowsay
+      vscode
     ];
 
     stateVersion = "24.05";
