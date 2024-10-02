@@ -33,7 +33,6 @@
     bash = {
       enable = true;
       historyFile = "${config.xdg.configHome}/bash/bash_history";
-      initExtra = builtins.readFile "${dotfiles}/.bashrc";    
     };
 
     fzf = {
