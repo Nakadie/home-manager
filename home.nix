@@ -28,4 +28,11 @@
 
   xdg.enable = true;
   targets.genericLinux.enable = true;
+
+  programs = {
+    fzf = {
+      enable = true;
+      enableBashIntegration = true;
+    }
+  }
 }
