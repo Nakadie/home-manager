@@ -23,13 +23,19 @@
     allowUnfreePredicate = _: true;
   };
 
-  programs.home-manager.enable = true;
-  programs.bash.enable = true;
-
   xdg.enable = true;
   targets.genericLinux.enable = true;
 
   programs = {
+
+    home-manager.enable = true;
+
+    bash = {
+      enable = true;
+      historyFile = "${config.xdg.configHome}/bash/bash_history";
+      initExtra = builtins.readFile "${dotfiles}/.bashrc";    
+    };
+
     fzf = {
       enable = true;
       enableBashIntegration = true;
