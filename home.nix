@@ -10,6 +10,8 @@
       obsidian
       cowsay
       vscode
+      okular
+      fzf
     ];
 
     stateVersion = "24.05";
