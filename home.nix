@@ -33,6 +33,6 @@
     fzf = {
       enable = true;
       enableBashIntegration = true;
-    }
-  }
+    };
+  };
 }
