@@ -34,7 +34,7 @@
       enable = true;
       shellAliases = {
         vpn = "nix run git+ssh://git@github.com/paidy/openvpn3-manager-nix";
-        "race condish" = "cd Paidy/set-bau-scripts/reprocess_race_conditions/ && nix develop --command bash -c 'DELTA_HOURS=72 ./reprocess.sh'";
+        race_condish = "cd Paidy/set-bau-scripts/reprocess_race_conditions/ && nix develop --command bash -c 'DELTA_HOURS=72 ./reprocess.sh'";
       };
     };
 
