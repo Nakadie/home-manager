@@ -32,6 +32,9 @@
 
     bash = {
       enable = true;
+      shellAliases = {
+        vpn = "nix run "git+ssh://git@github.com/paidy/openvpn3-manager-nix" ";
+      };
     };
 
     fzf = {
