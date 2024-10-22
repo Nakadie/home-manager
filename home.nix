@@ -6,14 +6,6 @@
   home = {
     homeDirectory = "/home/christian.dietiker";
 
-    packages = with pkgs; [
-      obsidian
-      cowsay
-      vscode
-      okular
-      fzf
-    ];
-
     stateVersion = "24.05";
     username = "christian.dietiker";
   };
@@ -25,6 +17,14 @@
 
   xdg.enable = true;
   targets.genericLinux.enable = true;
+
+  packages = with pkgs; [
+      obsidian
+      cowsay
+      vscode
+      okular
+      fzf
+    ];
 
   programs = {
 
