@@ -22,7 +22,7 @@
       inherit pkgs;
 
       modules = [
-        ./home.nix
+        ./work-laptop-home.nix
       ];
     };
   };

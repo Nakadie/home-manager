@@ -4,8 +4,6 @@
   ...
 }: {
   home = {
-    homeDirectory = "/home/christian.dietiker";
-
     packages = with pkgs; [
       obsidian
       cowsay
@@ -13,9 +11,8 @@
       okular
       fzf
     ];
-
     stateVersion = "24.05";
-    username = "christian.dietiker";
+    
   };
 
   nixpkgs.config = {
