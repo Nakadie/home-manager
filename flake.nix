@@ -25,5 +25,13 @@
         ./work-laptop-home.nix
       ];
     };
+
+    homeConfigurations.kam = home-manager.lib.homeManagerConfiguration {
+      inherit pkgs;
+
+      modules = [
+        ./kam-home.nix
+      ];
+    };
   };
 }
