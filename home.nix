@@ -10,6 +10,7 @@
       vscode
       okular
       fzf
+      tealdeer
     ];
     stateVersion = "24.05";
     
