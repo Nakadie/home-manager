@@ -11,6 +11,7 @@
       okular
       fzf
       tealdeer
+      sbt
     ];
     stateVersion = "24.05";
     
