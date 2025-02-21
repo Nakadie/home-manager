@@ -7,6 +7,7 @@
     homeDirectory = "/home/christian.dietiker";
 
     packages = (with pkgs; [
+      nerd-fonts.fira-code
     ]);
   };
   programs = {
@@ -22,6 +23,8 @@
     };
     starship.enable = true;
   };
+
+  fonts.fontconfig.enable = true;
 
   imports = [
     ./home.nix
