@@ -24,5 +24,6 @@
 
   imports = [
     ./home.nix
+    ./starship.nix
   ];
 }
