@@ -8,13 +8,15 @@
 
     packages = (with pkgs; [
       nerd-fonts.fira-code
+      most
     ]);
   };
   programs = {
     
     bash = {
       initExtra = ''
-      export NEXUS_HOST_RELEASES=https://nexus.test.paidy.io/nexus/content/repositories/releases
+      export NEXUS_HOST_RELEASES=https://nexus.test.paidy.io/nexus/content/repositories/releases;
+      export PAGER="most";
       '';
       shellAliases = {
         vpn = "nix run git+ssh://git@github.com/paidy/openvpn3-manager-nix";
