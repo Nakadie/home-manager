@@ -8,7 +8,6 @@
       obsidian
       cowsay
       vscode
-      okular
       fzf
       tealdeer
       sbt

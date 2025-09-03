@@ -3,14 +3,16 @@
 {
 
   home = {
-    username = "kam";
-    homeDirectory = "/home/kam";
+    username = "kamuela";
+    homeDirectory = "/home/kamuela";
 
     packages = (with pkgs; [
+      nerd-fonts.fira-code
     ]);
   };
   
   imports = [
     ./home.nix
+    ./starship.nix
   ];
 }
