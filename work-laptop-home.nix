@@ -6,18 +6,21 @@
     username = "christian.dietiker";
     homeDirectory = "/home/christian.dietiker";
 
-    packages = (with pkgs; [
-      nerd-fonts.fira-code
-      most
-      okular
-    ]);
+    packages = (
+      with pkgs;
+      [
+        nerd-fonts.fira-code
+        most
+        okular
+      ]
+    );
   };
   programs = {
-    
+
     bash = {
       initExtra = ''
-      export NEXUS_HOST_RELEASES=https://nexus.test.paidy.io/nexus/content/repositories/releases;
-      export PAGER="most";
+        export NEXUS_HOST_RELEASES=https://nexus.test.paidy.io/nexus/content/repositories/releases;
+        export PAGER="most";
       '';
       shellAliases = {
         vpn = "nix run git+ssh://git@github.com/paidy/openvpn3-manager-nix";
