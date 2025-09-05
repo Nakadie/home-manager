@@ -12,11 +12,17 @@
         nerd-fonts.fira-code
         opencode
         vscode
-        ghostty
-        kitty
+        ollama
+        flutter
       ]
     );
   };
+
+  programs = {
+    starship.enable = true;
+  };
+
+  fonts.fontconfig.enable = true;
 
   imports = [
     ./home.nix
